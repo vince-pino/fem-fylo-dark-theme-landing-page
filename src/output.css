@@ -558,7 +558,7 @@ video {
   display: grid;
 }
 
-.bg-black {
+.bg-dark-blue-main {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: hsl(218 28% 13% / var(--tw-bg-opacity));
 }
