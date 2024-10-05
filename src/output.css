@@ -566,12 +566,20 @@ video {
   left: 50%;
 }
 
+.left-10 {
+  left: 2.5rem;
+}
+
 .left-14 {
   left: 3.5rem;
 }
 
 .top-1\/2 {
   top: 50%;
+}
+
+.top-12 {
+  top: 3rem;
 }
 
 .top-32 {
@@ -643,12 +651,20 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-10 {
   height: 2.5rem;
 }
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .w-28 {
@@ -679,6 +695,10 @@ video {
 
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -772,9 +792,9 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-cyan {
+.bg-blue {
   --tw-bg-opacity: 1;
-  background-color: hsl(176 68% 64% / var(--tw-bg-opacity));
+  background-color: hsl(198 60% 50% / var(--tw-bg-opacity));
 }
 
 .bg-dark-blue-footer {
@@ -912,6 +932,16 @@ video {
   color: hsl(176 68% 64% / var(--tw-text-opacity));
 }
 
+.text-dark-blue-main {
+  --tw-text-opacity: 1;
+  color: hsl(218 28% 13% / var(--tw-text-opacity));
+}
+
+.text-light-red-error {
+  --tw-text-opacity: 1;
+  color: hsl(0 100% 63% / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -927,6 +957,38 @@ video {
   --tw-shadow: 0px 0px 10px rgba(0,0,0,0.2);
   --tw-shadow-colored: 0px 0px 10px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.hover\:border-white:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.hover\:bg-cyan:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(176 68% 64% / var(--tw-bg-opacity));
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
